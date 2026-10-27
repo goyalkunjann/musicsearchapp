@@ -14,7 +14,6 @@ Scan the QR code with Expo Go, or press `i` for the iOS simulator.
 ## Highlights
 - 3D stacked category list (Reanimated, UI-thread only)
 - Staggered spring suggestions with debounced, abortable fetches
-- Mini-player expands to Now Playing (one shared value, transform/opacity only) with drag-to-dismiss
 - Parallax artist hero, plus loading / empty / error states
 
 ## Architecture
@@ -30,8 +29,5 @@ Scan the QR code with Expo Go, or press `i` for the iOS simulator.
 ## Decisions and trade-offs
 - zustand with boolean selectors, so only affected rows re-render
 - Data and images come from the free Deezer API (no key), cached in memory
-- Playback progress is simulated; real audio can plug in via expo-audio
 
-## Known limitations
-- Lyrics come from lyrics.ovh and may be missing for some tracks
-- "Monthly listeners" is Deezer's fan count
+
